@@ -1,0 +1,261 @@
+import mahabodhiImg from "@/assets/mahabodhi-temple.jpg";
+import nalandaImg from "@/assets/nalanda-ruins.jpg";
+import rajgirImg from "@/assets/rajgir.jpg";
+import vikramshilaImg from "@/assets/vikramshila.jpg";
+import vaishaliImg from "@/assets/vaishali.jpg";
+import pawapuriImg from "@/assets/pawapuri.jpg";
+import patnaSahibImg from "@/assets/patna-sahib.jpg";
+import mundeshwariImg from "@/assets/mundeshwari-temple.jpg";
+import kesariaImg from "@/assets/kesaria-stupa.jpg";
+import valmikiImg from "@/assets/valmiki-nagar.jpg";
+import sasaramImg from "@/assets/sher-shah-tomb.jpg";
+import darbhangaImg from "@/assets/darbhanga-raj.jpg";
+import kakolatImg from "@/assets/kakolat-falls.jpg";
+import patnaMuseumImg from "@/assets/patna-museum.jpg";
+import golgharImg from "@/assets/golghar.jpg";
+
+export interface Place {
+  id: string;
+  name: string;
+  location: string;
+  shortDescription: string;
+  fullDescription: string;
+  highlights: string[];
+  bestTimeToVisit: string;
+  howToReach: string;
+  entryFee: string;
+  timings: string;
+  category: string;
+  image: string;
+  gallery: string[];
+}
+
+export const places: Place[] = [
+  {
+    id: "mahabodhi-temple",
+    name: "Mahabodhi Temple",
+    location: "Bodh Gaya, Gaya District",
+    shortDescription: "UNESCO World Heritage Site where Lord Buddha attained enlightenment under the sacred Bodhi Tree.",
+    fullDescription: "The Mahabodhi Temple Complex at Bodh Gaya is one of the four holy sites related to the life of Lord Buddha and is the most sacred of all Buddhist pilgrimage sites. The first temple was built by Emperor Ashoka in the 3rd century BC, and the present temple dates from the 5th–6th centuries. It is one of the earliest Buddhist temples built entirely in brick that still survives in India. The temple complex includes the Vajrasana (Diamond Throne), the sacred Bodhi Tree, the Animeshlochan Chaitya, the Ratnachakrama (Jewel Walk), and several ancient stupas and votive temples.",
+    highlights: ["UNESCO World Heritage Site", "Sacred Bodhi Tree", "Vajrasana (Diamond Throne)", "80-foot Great Buddha Statue", "Meditation under the Bodhi Tree"],
+    bestTimeToVisit: "October to March",
+    howToReach: "Gaya Airport (12 km), Gaya Junction Railway Station (16 km). Well connected by road from Patna (110 km).",
+    entryFee: "Free (Camera fee applies)",
+    timings: "5:00 AM - 9:00 PM",
+    category: "Religious",
+    image: mahabodhiImg,
+    gallery: [],
+  },
+  {
+    id: "nalanda-university",
+    name: "Nalanda University Ruins",
+    location: "Nalanda District",
+    shortDescription: "Ruins of the ancient world's greatest center of learning, dating back to the 5th century AD.",
+    fullDescription: "Nalanda was an acclaimed Mahavihara, a large Buddhist monastery in ancient Magadha. It was a center of learning from the 5th century CE to 1200 CE, considered the first residential international university in the world. At its peak, it attracted scholars and students from across the ancient world—from Korea, Japan, China, Tibet, Indonesia, Persia, and Turkey. The university had a rigorous entrance examination and offered courses in every field of learning, maintaining a library so vast it reportedly burned for three months when destroyed. Today, the extensive ruins spread over 14 hectares reveal the grandeur of this ancient seat of knowledge.",
+    highlights: ["UNESCO World Heritage Site", "Ancient University Ruins", "Nalanda Archaeological Museum", "Xuanzang Memorial Hall", "14-hectare excavated campus"],
+    bestTimeToVisit: "October to March",
+    howToReach: "Nearest airport: Patna (89 km). Rajgir Railway Station (12 km). Regular buses from Patna and Rajgir.",
+    entryFee: "₹25 (Indians), ₹600 (Foreigners)",
+    timings: "9:00 AM - 5:00 PM (Closed on Fridays)",
+    category: "Historical",
+    image: nalandaImg,
+    gallery: [],
+  },
+  {
+    id: "rajgir",
+    name: "Rajgir",
+    location: "Nalanda District",
+    shortDescription: "Ancient capital of the Magadha Kingdom, sacred to Buddhists, Jains, and Hindus alike.",
+    fullDescription: "Rajgir, meaning 'house of the king', was the ancient capital of the Magadha kingdom. It is surrounded by seven hills — Vaibhagiri, Rathnagiri, Saila, Sona, Udaya, Chhath, and Vipula — and holds immense religious significance for Buddhists, Jains, and Hindus. Lord Buddha spent many years here and delivered several important sermons at Griddhakuta (Vulture's Peak). Lord Mahavira also spent fourteen rainy seasons in Rajgir. The Vishwa Shanti Stupa (Peace Pagoda) on Ratnagiri Hill, built by the Japan Buddha Sangha, offers panoramic views and is accessible by aerial ropeway — India's oldest.",
+    highlights: ["Vishwa Shanti Stupa (Peace Pagoda)", "Griddhakuta (Vulture's Peak)", "Hot Springs (Brahmakund)", "Aerial Ropeway", "Cyclopean Wall"],
+    bestTimeToVisit: "October to March",
+    howToReach: "Rajgir Railway Station is well connected. Patna Airport (102 km). Regular bus services from Patna, Nalanda, and Bodh Gaya.",
+    entryFee: "Varies by attraction",
+    timings: "Sunrise to Sunset",
+    category: "Religious",
+    image: rajgirImg,
+    gallery: [],
+  },
+  {
+    id: "vikramshila",
+    name: "Vikramshila University",
+    location: "Bhagalpur District",
+    shortDescription: "Ruins of an ancient Buddhist university founded by King Dharmapala in the 8th century.",
+    fullDescription: "Vikramshila was one of the two most important centers of learning in India during the Pala dynasty, along with Nalanda. Founded by King Dharmapala (783-820 AD), this university was known primarily for its specialization in Tantric Buddhism (Vajrayana). At its peak, it housed over 1,000 students and more than 100 teachers. The great scholar Atisha Dipankara, who revived Buddhism in Tibet, was a notable alumnus and teacher here. The excavated site reveals a massive square monastery with a central cruciform stupa, surrounded by monks' cells, a library, and votive stupas.",
+    highlights: ["Ancient Buddhist Monastery Ruins", "Central Stupa Complex", "River Ganges Views", "Archaeological Museum", "Antichak Village"],
+    bestTimeToVisit: "October to March",
+    howToReach: "Bhagalpur Railway Station (50 km), Patna Airport (275 km). Local buses and taxis available from Bhagalpur.",
+    entryFee: "₹25 (Indians), ₹300 (Foreigners)",
+    timings: "9:00 AM - 5:00 PM",
+    category: "Historical",
+    image: vikramshilaImg,
+    gallery: [],
+  },
+  {
+    id: "vaishali",
+    name: "Vaishali",
+    location: "Vaishali District",
+    shortDescription: "Birthplace of Lord Mahavira and site of the world's first democratic republic.",
+    fullDescription: "Vaishali is one of the oldest cities in the world and holds an extraordinary place in both Indian history and religious tradition. It is celebrated as the birthplace of Lord Mahavira, the 24th Tirthankara of Jainism. Vaishali is also the place where Lord Buddha preached his last sermon before his Mahaparinirvana and announced his approaching death. Historically, Vaishali is recognized as the world's first republic, where the Lichchhavi rulers practiced an early form of democratic governance. The Ashoka Pillar, Kutagarasala Vihara, and the coronation tank (Abhishek Pushkarini) are the main attractions.",
+    highlights: ["Ashoka Pillar", "Kutagarasala Vihara", "Abhishek Pushkarini (Coronation Tank)", "World Peace Pagoda", "Vaishali Museum"],
+    bestTimeToVisit: "October to March",
+    howToReach: "Hajipur Railway Station (35 km), Patna Airport (60 km). Well connected by road to Patna and Muzaffarpur.",
+    entryFee: "Free (Museum: ₹5)",
+    timings: "Sunrise to Sunset",
+    category: "Historical",
+    image: vaishaliImg,
+    gallery: [],
+  },
+  {
+    id: "pawapuri",
+    name: "Pawapuri",
+    location: "Nalanda District",
+    shortDescription: "Sacred Jain pilgrimage site where Lord Mahavira attained Moksha (salvation).",
+    fullDescription: "Pawapuri (also known as Apapuri, meaning 'the sinless town') is one of the most revered pilgrimage sites for Jains worldwide. It is here that Lord Mahavira, the 24th Tirthankara of Jainism, attained Moksha (liberation from the cycle of birth and death) in 500 BC. The Jal Mandir, a stunning white marble temple situated in the middle of a lotus-filled tank, marks the exact spot of his cremation. Legend says that so many people came to collect his ashes that the ground around the cremation site was dug away, creating the tank. The Samosharan, another important temple, marks the spot of Mahavira's last sermon.",
+    highlights: ["Jal Mandir (Water Temple)", "Samosharan Temple", "Lotus-filled Sacred Tank", "Annual Jain Festivals", "Peaceful Meditation Environment"],
+    bestTimeToVisit: "October to March",
+    howToReach: "Rajgir (25 km), Bihar Sharif Railway Station (15 km), Patna Airport (83 km).",
+    entryFee: "Free",
+    timings: "6:00 AM - 8:00 PM",
+    category: "Religious",
+    image: pawapuriImg,
+    gallery: [],
+  },
+  {
+    id: "patna-sahib",
+    name: "Patna Sahib (Takht Sri Patna Sahib)",
+    location: "Patna",
+    shortDescription: "One of five Sikh Takhts, marking the birthplace of Guru Gobind Singh Ji.",
+    fullDescription: "Takht Sri Patna Sahib is one of the five Takhts (seats of authority) of Sikhism and the birthplace of Guru Gobind Singh Ji, the tenth Sikh Guru. Born in 1666, Guru Gobind Singh spent his early years in Patna. The magnificent Gurudwara was built by Maharaja Ranjit Singh in the 19th century to honor this sacred site. The Gurudwara houses several sacred relics including the Guru's cradle, four iron arrows, a pair of his sandals (Paduka), and a sword (Kirpan). The grand white marble structure with its imposing dome is a masterpiece of Sikh architecture and attracts pilgrims from around the world.",
+    highlights: ["Sacred Sikh Takht", "Historical Relics of Guru Gobind Singh", "Magnificent Architecture", "Guru Ka Bagh Gurudwara", "Free Community Kitchen (Langar)"],
+    bestTimeToVisit: "November to February (Guru Purab celebrations)",
+    howToReach: "Patna Junction (3 km), Jay Prakash Narayan Airport (7 km). Auto-rickshaws and taxis available.",
+    entryFee: "Free",
+    timings: "4:00 AM - 10:00 PM",
+    category: "Religious",
+    image: patnaSahibImg,
+    gallery: [],
+  },
+  {
+    id: "mundeshwari-temple",
+    name: "Mundeshwari Temple",
+    location: "Kaimur District",
+    shortDescription: "One of the oldest functional Hindu temples in India, dating back to 108 AD.",
+    fullDescription: "The Mundeshwari Devi Temple, perched atop the Mundeshwari Hills at 608 feet elevation in the Kaimur district, is considered one of the oldest functional Hindu temples in India. Archaeological evidence dates its origins to 108 AD based on inscriptions found at the site. The octagonal temple is dedicated to Lord Shiva and Goddess Shakti (Mundeshwari Devi). Built in the Nagara style of architecture, the temple features exquisite stone carvings depicting various Hindu deities. The Archaeological Survey of India has preserved the temple, and it continues to be an active place of worship with daily rituals and a unique tradition of animal sacrifice using flowers instead of actual animals.",
+    highlights: ["Oldest Functional Temple in India", "Octagonal Architecture", "Ancient Stone Carvings", "Hilltop Location with Valley Views", "Unique Flower Sacrifice Tradition"],
+    bestTimeToVisit: "October to March",
+    howToReach: "Bhabua Road Railway Station (22 km), Varanasi Airport (90 km). Local transport available from Bhabua.",
+    entryFee: "Free",
+    timings: "6:00 AM - 6:00 PM",
+    category: "Religious",
+    image: mundeshwariImg,
+    gallery: [],
+  },
+  {
+    id: "kesaria-stupa",
+    name: "Kesaria Stupa",
+    location: "East Champaran District",
+    shortDescription: "The tallest and largest Buddhist stupa in the world, standing at 104 feet.",
+    fullDescription: "Kesaria Stupa is the world's tallest and largest Buddhist stupa, standing at approximately 104 feet (32 meters). Located in East Champaran district, it is believed to mark the spot where Lord Buddha left his alms bowl (begging bowl) while on his last journey from Vaishali to Kushinagar. The stupa was originally built by the Lichchhavi rulers around 200 AD and was later enlarged during the Gupta period (4th–6th century). The massive structure has a circumference of almost 400 feet at the base and features terraced levels adorned with numerous niches that once housed Buddha statues. Excavations have revealed that it was built in stages over several centuries.",
+    highlights: ["World's Tallest Buddhist Stupa", "Ancient Gupta Period Architecture", "Panoramic Views from Upper Terraces", "Archaeological Excavation Site", "Connection to Buddha's Last Journey"],
+    bestTimeToVisit: "October to March",
+    howToReach: "Motihari (40 km), Patna (112 km). Local buses and taxis available from Motihari.",
+    entryFee: "₹25 (Indians), ₹300 (Foreigners)",
+    timings: "9:00 AM - 5:00 PM",
+    category: "Historical",
+    image: kesariaImg,
+    gallery: [],
+  },
+  {
+    id: "valmiki-nagar",
+    name: "Valmiki Nagar Wildlife Sanctuary",
+    location: "West Champaran District",
+    shortDescription: "Bihar's only tiger reserve, home to Royal Bengal Tigers and diverse wildlife.",
+    fullDescription: "Valmiki National Park and Wildlife Sanctuary, spread over 898.45 sq km in the West Champaran district, is Bihar's only tiger reserve and one of India's important protected areas. Named after the sage Valmiki, who is believed to have composed the Ramayana in this forest, the sanctuary lies on the India-Nepal border and is contiguous with Nepal's Chitwan National Park. The diverse ecosystem supports Royal Bengal Tigers, Indian Leopards, Sloth Bears, Indian Rhinoceros (occasional visitors from Nepal), Wild Elephants, Gaur (Indian Bison), and over 250 species of birds. The Gandak River flows through the sanctuary, adding to its scenic beauty.",
+    highlights: ["Bihar's Only Tiger Reserve", "Royal Bengal Tiger Sightings", "Gandak River Safari", "250+ Bird Species", "India-Nepal Border Location"],
+    bestTimeToVisit: "November to May",
+    howToReach: "Nearest railhead: Bettiah (80 km) or Raxaul (60 km). Patna Airport (280 km). Regular buses from Bettiah.",
+    entryFee: "₹100 (Indians), ₹500 (Foreigners) + Vehicle charges",
+    timings: "6:00 AM - 5:00 PM",
+    category: "Nature",
+    image: valmikiImg,
+    gallery: [],
+  },
+  {
+    id: "sasaram",
+    name: "Sher Shah Suri Tomb",
+    location: "Sasaram, Rohtas District",
+    shortDescription: "A magnificent 16th-century mausoleum standing majestically in the middle of an artificial lake.",
+    fullDescription: "The tomb of Sher Shah Suri in Sasaram is one of the finest examples of Indo-Islamic architecture in India. Built in 1545 AD, this magnificent mausoleum stands on a raised platform in the middle of an artificial lake, creating a stunning reflection that doubles its visual impact. Sher Shah Suri, the founder of the Sur dynasty who defeated the Mughal Emperor Humayun, was one of India's most brilliant administrators — he introduced the rupee currency, built the Grand Trunk Road, and reformed the revenue system. The octagonal tomb rises to a height of 122 feet, topped by a massive dome, and is surrounded by a colonnade with 24 arches on each side.",
+    highlights: ["Masterpiece of Indo-Islamic Architecture", "122-feet tall Octagonal Tomb", "Stunning Lake Reflection", "Historical Museum Nearby", "Grand Trunk Road Heritage"],
+    bestTimeToVisit: "October to March",
+    howToReach: "Sasaram Railway Station (1 km), Varanasi Airport (130 km). Well connected by road (on Grand Trunk Road/NH2).",
+    entryFee: "₹25 (Indians), ₹300 (Foreigners)",
+    timings: "Sunrise to Sunset",
+    category: "Historical",
+    image: sasaramImg,
+    gallery: [],
+  },
+  {
+    id: "darbhanga",
+    name: "Darbhanga Raj (Royal Fort & Palace)",
+    location: "Darbhanga",
+    shortDescription: "The royal estate of the Darbhanga Raj, one of the richest zamindari estates of British India.",
+    fullDescription: "Darbhanga, the cultural capital of Mithila, was the seat of the powerful Darbhanga Raj, one of the largest and richest zamindari estates in British India. The Darbhanga Raj Niwas (Fort), built in the style of European castles, is a stunning example of Indo-European architecture. Maharaja Lakshmishwar Singh and Maharaja Rameshwar Singh transformed Darbhanga into a center of art, culture, and learning. The city is the heartland of Mithila culture and Madhubani paintings, a vibrant folk art form recognized worldwide. Naulakha Palace, Anand Bagh Palace, and the beautiful Shyama Temple are other notable attractions.",
+    highlights: ["Darbhanga Raj Fort & Palace", "Naulakha Palace", "Madhubani Painting Heritage", "Shyama Temple", "Mithila Cultural Capital"],
+    bestTimeToVisit: "October to March",
+    howToReach: "Darbhanga Airport (connected to Patna), Darbhanga Junction Railway Station. Well connected by road from Patna (280 km) and Muzaffarpur (55 km).",
+    entryFee: "Varies by attraction",
+    timings: "10:00 AM - 5:00 PM",
+    category: "Cultural",
+    image: darbhangaImg,
+    gallery: [],
+  },
+  {
+    id: "kakolat-falls",
+    name: "Kakolat Waterfall",
+    location: "Nawada District",
+    shortDescription: "A stunning 160-feet waterfall surrounded by lush greenery, Bihar's tallest waterfall.",
+    fullDescription: "Kakolat Waterfall, located in the Nawada district of Bihar, is the state's tallest waterfall with a height of approximately 160 feet (50 meters). Nestled in the Kakolat hills amidst dense forests, this natural wonder cascades down rocky cliffs into a natural pool at its base. Local legends associate the waterfall with a curse — it is believed that a king was cursed to become a python and was freed when he bathed in these waters. The waterfall is surrounded by lush vegetation and offers a refreshing escape from the plains. The Bihar government has developed the area with pathways, viewing platforms, and basic amenities for visitors.",
+    highlights: ["Bihar's Tallest Waterfall (160 ft)", "Natural Swimming Pool", "Lush Forest Surroundings", "Monsoon Season Spectacle", "Trekking Opportunities"],
+    bestTimeToVisit: "July to October (Monsoon for best water flow)",
+    howToReach: "Nawada Railway Station (30 km), Gaya Airport (70 km). Local jeeps and autos from Nawada.",
+    entryFee: "₹20",
+    timings: "8:00 AM - 5:00 PM",
+    category: "Nature",
+    image: kakolatImg,
+    gallery: [],
+  },
+  {
+    id: "patna-museum",
+    name: "Patna Museum",
+    location: "Patna",
+    shortDescription: "A treasure trove of Bihar's history housing the famous Didarganj Yakshi and ancient relics.",
+    fullDescription: "The Patna Museum, also known as Jadu Ghar (House of Magic), is one of the oldest and most significant museums in India, established in 1917. Housed in a Indo-Saracenic style building, it preserves a remarkable collection of artifacts spanning thousands of years of Bihar's rich history. The museum's crown jewel is the Didarganj Yakshi, a stunning 3rd century BC Mauryan-era polished sandstone sculpture considered one of the finest examples of Indian art. Other highlights include a 200-million-year-old fossilized tree, a holy relic casket from the Vaishali Buddha Stupa, a collection of Gandhara sculptures, Mughal and Rajput miniature paintings, and artifacts from the Maurya, Gupta, and Pala periods.",
+    highlights: ["Didarganj Yakshi Sculpture", "200-Million-Year Fossil Tree", "Buddha Relic Casket from Vaishali", "Mughal & Rajput Paintings", "Gandhara Art Collection"],
+    bestTimeToVisit: "October to March",
+    howToReach: "Located in central Patna. Patna Junction (2 km), Jay Prakash Narayan Airport (6 km). Auto-rickshaws and taxis readily available.",
+    entryFee: "₹20 (Indians), ₹500 (Foreigners)",
+    timings: "10:30 AM - 4:30 PM (Closed on Mondays)",
+    category: "Cultural",
+    image: patnaMuseumImg,
+    gallery: [],
+  },
+  {
+    id: "golghar",
+    name: "Golghar",
+    location: "Patna",
+    shortDescription: "An iconic beehive-shaped granary built in 1786, offering panoramic views of Patna and the Ganges.",
+    fullDescription: "Golghar (meaning 'Round House') is an iconic landmark of Patna and one of the most recognizable structures in Bihar. Built in 1786 by Captain John Garstin under the orders of Governor-General Warren Hastings, this massive beehive-shaped granary was designed to store grain to prevent famines like the devastating one of 1770. Standing 29 meters high with walls 3.6 meters thick at the base, the structure features two spiral staircases winding around its exterior — originally designed so that workers could carry grain up one side and come down the other without interrupting the flow. Ironically, the granary was never filled to capacity because the walls lean inward, preventing the doors from opening when full. Today, 145 steps lead to the top, rewarding climbers with breathtaking 360-degree panoramic views of Patna city and the River Ganges.",
+    highlights: ["Iconic Beehive Architecture", "360° Panoramic City Views", "145 Steps to the Top", "River Ganges Vistas", "Historical British-era Monument"],
+    bestTimeToVisit: "October to March (Early morning or late afternoon for best views)",
+    howToReach: "Located in central Patna near Gandhi Maidan. Patna Junction (2 km), Jay Prakash Narayan Airport (7 km).",
+    entryFee: "₹25 (Indians), ₹200 (Foreigners)",
+    timings: "9:00 AM - 6:00 PM",
+    category: "Historical",
+    image: golgharImg,
+    gallery: [],
+  },
+];
+
+export const categories = ["All", "Religious", "Historical", "Cultural", "Nature"];
